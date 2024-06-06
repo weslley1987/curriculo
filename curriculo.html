@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Weslley Adelgicio Rocha Silva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #ccc 3px solid;
+            text-align: center;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .main-header {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        .content {
+            padding: 20px;
+            background: #fff;
+        }
+        .profile-pic {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .profile-pic img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .button, .download-btn, .back-button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover, .download-btn:hover, .back-button:hover {
+            background-color: #777;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        .section {
+            display: none;
+        }
+        .name {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+            document.getElementById(sectionId).style.display = 'block';
+        }
+        function showHome() {
+            var sections = document.getElementsByClassName('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+            document.getElementById('home').style.display = 'block';
+        }
+    </script>
+</head>
+<body onload="showHome()">
+    <header>
+        <div class="container">
+            <ul>
+                <li><a href="#" onclick="showSection('objetivo')">Objetivo</a></li>
+                <li><a href="#" onclick="showSection('resumo')">Resumo</a></li>
+                <li><a href="#" onclick="showSection('experiencia')">Experiência</a></li>
+                <li><a href="#" onclick="showSection('formacao')">Formação</a></li>
+                <li><a href="#" onclick="showSection('habilidades')">Habilidades</a></li>
+                <li><a href="#" onclick="showSection('contato')">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <div class="name">
+        <h1>Weslley Adelgicio Rocha Silva</h1>
+    </div>
+
+    <div id="home" class="section">
+        <div class="main-header">
+            <div class="container">
+                <h1>Currículo</h1>
+            </div>
+        </div>
+
+        <div class="content container">
+            <div class="profile-pic">
+                <img src="foto.perfil.jpeg" alt="Foto de Perfil">
+            </div>
+
+            <section id="objetivo-home">
+                <h2>Objetivo</h2>
+                <p>Profissional técnico e de gestão buscando oportunidades nas áreas de tecnologia e liderança, com foco em implementar soluções inovadoras e otimizar processos operacionais.</p>
+            </section>
+
+            <section id="resumo-home">
+                <h2>Resumo Profissional</h2>
+                <p>Profissional técnico com vasta experiência em supervisão e instrução especializado em elétrica e manutenção industrial. Comprovada habilidade em liderar equipes técnicas, gerenciar projetos complexos e conduzir treinamentos em Indústria 4.0. Forte capacidade de identificar e implementar melhorias de processos garantindo segurança e eficiência operacional. Adaptável, comunicativo e com sólida base técnica, preparado para enfrentar desafios avançados.</p>
+            </section>
+
+            <a class="download-btn" href="curriculo-weslley.pdf" download>Baixar Currículo em PDF</a>
+        </div>
+    </div>
+
+    <div id="objetivo" class="section">
+        <a class="back-button" href="#" onclick="showHome()">Voltar</a>
+        <div class="content container">
+            <section>
+                <h2>Objetivo</h2>
+                <p>Profissional técnico e de gestão buscando oportunidades nas áreas de tecnologia e liderança, com foco em implementar soluções inovadoras e otimizar processos operacionais.</p>
+            </section>
+        </div>
+    </div>
+
+    <div id="resumo" class="section">
+        <a class="back-button" href="#" onclick="showHome()">Voltar</a>
+        <div class="content container">
+            <section>
+                <h2>Resumo Profissional</h2>
+                <p>Profissional técnico com vasta experiência em supervisão e instrução especializado em elétrica e manutenção industrial. Comprovada habilidade em liderar equipes técnicas, gerenciar projetos complexos e conduzir treinamentos em Indústria 4.0. Forte capacidade de identificar e implementar melhorias de processos garantindo segurança e eficiência operacional. Adaptável, comunicativo e com sólida base técnica, preparado para enfrentar desafios avançados.</p>
+            </section>
+        </div>
+    </div>
+
+    <div id="experiencia" class="section">
+        <a class="back-button" href="#" onclick="showHome()">Voltar</a>
+        <div class="content container">
+            <section>
+                <h2>Experiência Profissional</h2>
+                <h3>SENAI</h3>
+                <p>Analista de Tecnologia (Instrutor de Formação Profissional)</p>
+                <p>Data: 09/2019 a 06/2024</p>
+                <ul>
+                    <li>Desenvolvimento de soluções e propostas comerciais personalizadas.</li>
+                    <li>Treinamento em Tecnologias Habilitadoras 4.0.</li>
+                    <li>Coordenação de projetos práticos.</li>
+                    <li>Desenvolvimento de materiais didáticos e metodologias de ensino inovadoras.</li>
+                    <li>Consultoria técnica para empresas.</li>
+                </ul>
+
+                <h3>VIVANTE</h3>
+                <p>Supervisor Técnico</p>
+                <p>Data: 02/2018 a 09/2019</p>
+                <ul>
+                    <li>Planejamento e coordenação de atividades técnicas.</li>
+                    <li>Liderança de equipe em manutenções preventivas e corretivas.</li>
+                    <li>Gestão de cronogramas de manutenção e controle de qualidade dos serviços.</li>
+                    <li>Implementação de melhorias operacionais.</li>
+                </ul>
+
+                <h3>ECOVIX</h3>
+                <p>Supervisor</p>
+                <p>Data: 04/2014 a 01/2017</p>
+                <ul>
+                    <li>Supervisão de projetos de construção e manutenção periódica elétrica mecânica.</li>
+                    <li>Coordenação de equipes multidisciplinares e fiscalização de empresas terceirizadas.</li>
+                    <li>Elaboração e implementação de planos de manutenção.</li>
+                </ul>
+
+                <h3>FORSHIP Engenharia</h3>
+                <p>Técnico Pleno de Elétrica</p>
+                <p>Data: 06/2013 a 01/2014</p>
+                <ul>
+                    <li>Manutenção e instalação de sistemas elétricos em projetos de grande escala.</li>
+                    <li>Realização de diagnósticos e resolução de problemas complexos.</li>
+                    <li>Contribuição para a melhoria contínua dos processos técnicos.</li>
+                </ul>
+
+                <h3>GT Engenharia Ambiental</h3>
+                <p>Técnico de Manutenção Elétrica</p>
+                <p>Data: 05/2011 a 09/2012</p>
+                <ul>
+                    <li>Manutenção elétrica em equipamentos ambientais.</li>
+                    <li>Diagnósticos de falhas e implementação de soluções técnicas.</li>
+                    <li>Colaboração em projetos de melhorias ambientais e eficiência energética.</li>
+                </ul>
+
+                <h3>VALE S/A</h3>
+                <p>Técnico Eletromecânico e Eletroeletrônico</p>
+                <p>Data: 12/2009 a 01/2011</p>
+                <ul>
+                    <li>Manutenção de equipamentos eletromecânicos em operações de mineração.</li>
+                    <li>Coordenação de atividades de manutenção preventiva e corretiva.</li>
+                    <li>Participação ativa em projetos de otimização de processos e segurança operacional.</li>
+                </ul>
+
+                <h3>CTF Technologies do Brasil</h3>
+                <p>Técnico de Manutenção</p>
+                <p>Data: 11/2008 a 10/2009</p>
+                <ul>
+                    <li>Manutenção técnica em sistemas de automação e controle.</li>
+                    <li>Implementação de protocolos de segurança e manutenção preventiva.</li>
+                    <li>Contribuição para o aumento da eficiência e redução de custos operacionais.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <div id="formacao" class="section">
+        <a class="back-button" href="#" onclick="showHome()">Voltar</a>
+        <div class="content container">
+            <section>
+                <h2>Formação Acadêmica</h2>
+                <h3>Superior em Processos Gerenciais – Unicesumar</h3>
+                <p>Conclusão: ago/2024</p>
+
+                <h3>Técnico em Automação – SENAI</h3>
+                <p>Conclusão: set/2022</p>
+
+                <h3>Técnico em Eletroeletrônica – Colégio Polivalente</p>
+                <p>Conclusão: 2011</p>
+
+                <h3>Técnico de Manutenção em Equipamentos de Mineração – SENAI</h3>
+                <p>Conclusão: 2009</p>
+            </section>
+        </div>
+    </div>
+
+    <div id="habilidades" class="section">
+        <a class="back-button" href="#" onclick="showHome()">Voltar</a>
+        <div class="content container">
+            <section>
+                <h2>Habilidades</h2>
+                <p>Inglês – Básico</p>
+
+                <h2>Formação Complementar</h2>
+                <ul>
+                    <li>Treinamento Bucyrus e P&H (escavadeira a cabo)</li>
+                    <li>NR10, NR33, NR35 – Certificações em segurança do trabalho</li>
+                    <li>Treinamento de Segurança na Plataforma Elevatória</li>
+                    <li>Mecânico de Manutenção SENAI</li>
+                    <li>Correção de Fator de Potência</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <div id="contato" class="section">
+        <a class="back-button" href="#" onclick="showHome()">Voltar</a>
+        <div class="content container">
+            <section>
+                <h2>Contato</h2>
+                <p>Weslley Adelgicio Rocha Silva</p>
+                <p>36 anos</p>
+                <p>Itabira Gabiroba/MG</p>
+                <p>Telefone: (31) 98772-9295 / 31985960596</p>
+                <p>Email: weslley-itabira@hotmail.com</p>
+            </section>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Weslley Adelgicio Rocha Silva. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
